@@ -1,0 +1,28 @@
+.statsBox {
+  border: 1px solid var(--border-color);
+  padding: 20px 30px 25px;
+  border-radius: 5px;
+}
+
+.statsNo {
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  line-height: 1.2;
+}
+
+.statsTitle {
+  color: var(--small-font-size);
+  line-height: 1.6;
+  padding-left: 45px;
+  position: relative;
+}
+
+.statsTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 30px;
+  height: 1px;
+  background-color: var(--text-color);
+}

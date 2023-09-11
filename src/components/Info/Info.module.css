@@ -1,0 +1,9 @@
+.infoTitle,
+.infoDescription {
+  font-size: var(--smal-font-size);
+}
+
+.infoDescription {
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
