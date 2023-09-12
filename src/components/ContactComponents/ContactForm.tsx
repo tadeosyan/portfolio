@@ -21,7 +21,7 @@ export const ContactForm = () => {
   const form = useRef(null);
 
   const handleSubmit = async (
-    values: initialValuesTypes,
+    _values: initialValuesTypes,
     actions: FormikHelpers<initialValuesTypes>
   ) => {
     const currentForm = form.current;
