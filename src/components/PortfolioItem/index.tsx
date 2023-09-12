@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { PortfolioItemTypes } from 'data/data';
+import { PortfolioItemTypes } from 'data';
 import { PortfolioModal } from './PortfolioModal';
 
 import styled from './PortfolioItem.module.css';

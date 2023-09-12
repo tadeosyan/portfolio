@@ -1,4 +1,4 @@
-import { PortfolioDetails } from 'data/data';
+import { PortfolioDetails } from 'data';
 import styled from './PortfolioItem.module.css';
 import Close from 'assets/close.svg';
 
