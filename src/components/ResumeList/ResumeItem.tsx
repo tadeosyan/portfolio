@@ -1,5 +1,5 @@
 import parse from 'html-react-parser';
-import { ResumeEntry } from 'data/data';
+import { ResumeEntry } from 'data';
 import styled from './Resume.module.css';
 
 export const ResumeItem = ({
@@ -14,7 +14,7 @@ export const ResumeItem = ({
 
       <span className={styled.resumeDate}>{year}</span>
       <h3 className={styled.resumeSubtitle}>{parse(title)}</h3>
-      <p className={styled.resumeDescription}>{desc}</p>
+      <p className={styled.resumeDescription}>{parse(desc)}</p>
     </div>
   );
 };

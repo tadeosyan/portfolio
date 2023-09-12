@@ -157,7 +157,7 @@ export const resume: ResumeEntry[] = [
     icon: <FaBriefcase />,
     year: '2021 - 2023',
     title: 'React Developer <span> Web Foundation </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,',
+    desc: '    UI Components Designing & Application Interface Coding <br /> • Identified web-based user interactions and developed highly-responsive user interface components via React concept    • Translated designs & wireframes into high-quality code and     wrote application interface code via JavaScript following     React.js workflows <br />        Code Debugging & Front-end Architecture <br />    • Troubleshot interface software and debugged application     codes to improve functionality and performance    • Developed and implemented front-end architecture to support     user interface concepts with 100% accuracy        Application Development & UI Designing <br />    • Coordinated with the development team of 8 to discuss user interface ideas and applications    • Reviewed application requirements and interface designs to ensure compatibility with existing applications',
   },
 
   {
@@ -166,7 +166,7 @@ export const resume: ResumeEntry[] = [
     icon: <FaBriefcase />,
     year: '2020 - 2021',
     title: 'Frontend Developer <span> Kangaroo Delivery </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    desc: '&nbsp; Webpage Designing & Optimization <br /> • Determined the structure and design of web pages based on user requirements and balanced functional & aesthetic designs <br /> • Created features to enhance the user experience while ensuring that the web design is optimized for smartphones <br /> • Employed a variety of languages such as HTML and CSS to write & create user-friendly web pages <br /> &nbsp; Coding & Website Improvement <br /> • Built reusable code for future use and optimized web pages for 5 applications for maximum speed and scalability <br /> • Managed brand consistency throughout the design andmaintained & improved the companys website by adding more features and functionality',
   },
   {
     id: 5,
@@ -174,15 +174,15 @@ export const resume: ResumeEntry[] = [
     icon: <FaGraduationCap />,
     year: '2023',
     title: 'Bachelor Degree <span> NPUA </span>',
-    desc: 'Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt',
+    desc: `I have graduated from the National Polytechnic University of Armenia (NPUA) with a Bachelor's degree in Computer Engineering. Throughout my time at NPUA, I acquired a strong foundation in various areas of computer engineering, including hardware and software development, computer systems, and programming languages. The comprehensive education and practical experiences I gained during my studies have prepared me to excel in the field of computer engineering. I am now eager to apply my knowledge and skills in a professional setting, contributing to technological advancements and innovation in Armenia and beyond.`,
   },
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2017',
-    title: 'Engineer <span> Abovyan State Collage </span>',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore',
+    title: 'Technician Engineer <span> Abovyan State Collage </span>',
+    desc: 'My time at Abovyan State College was transformative. I excelled academically, gaining a strong foundation in technical knowledge. Practical, hands-on learning was emphasized, and I actively participated in workshops and labs. Collaborative projects honed my teamwork and communication skills. I became adept at problem-solving and developed a commitment to lifelong learning. This education forms the bedrock of my career in Technician Engineering.',
   },
 ];
 
