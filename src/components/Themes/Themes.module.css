@@ -83,3 +83,22 @@
   top: 2%;
   right: 15px;
 }
+
+/* Media Queries  */
+
+@media only screen and (max-width: 765px) {
+  .styleSwitcher {
+    top: 0;
+  }
+
+  .styleSwitcherToggler {
+    top: 0;
+    box-shadow: 0 0 5px #ccc;
+  }
+
+  .themeToggler {
+    top: 0;
+    left: 130%;
+    box-shadow: 0 0 5px #ccc;
+  }
+}
