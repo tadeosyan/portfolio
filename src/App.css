@@ -183,14 +183,16 @@ img {
   width: 10px;
 }
 
-/* Scrollbar Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 3px #ccc;
-  border-radius: 10px;
-}
-
 /* Scrollbar Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--first-color);
   border-radius: 10px;
+}
+
+/* Media Queries  */
+
+@media screen and (max-width: 765px) {
+  .grid {
+    gap: 5px;
+  }
 }

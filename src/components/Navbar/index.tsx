@@ -2,9 +2,22 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from './Navbar.module.css';
 import { links } from 'data/data';
+import { useScrollLock } from 'hooks';
 
 export const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  const hideMenu = () => {
+    showMenu && unlockScroll();
+    setShowMenu(!showMenu);
+  };
+
+  const toggleMenu = () => {
+    showMenu && unlockScroll();
+    !showMenu && lockScroll();
+    setShowMenu(!showMenu);
+  };
 
   return (
     <nav className={styled.nav}>
@@ -26,7 +39,7 @@ export const Navbar = () => {
                       ? `${styled.navLink} ${styled.activeNav}`
                       : styled.navLink
                   }
-                  onClick={() => setShowMenu(!showMenu)}
+                  onClick={hideMenu}
                 >
                   {icon}
                   <h3 className={styled.navName}>{name}</h3>
@@ -43,7 +56,7 @@ export const Navbar = () => {
             ? `${styled.navToggle} ${styled.animateToggle}`
             : styled.navToggle
         }
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={toggleMenu}
       >
         <span></span>
         <span></span>

@@ -17,7 +17,7 @@
 .homeData {
   max-width: 600px;
   margin-inline: auto;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .homeTitle {
@@ -55,4 +55,42 @@
   top: -50%;
   left: -83%;
   transform: rotate(-15deg);
+}
+
+/* Media Queries  */
+
+@media (max-width: 765px) {
+  .home {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    height: auto;
+    place-items: center;
+  }
+
+  .homeImg {
+    margin-left: 0px;
+  }
+
+  .homeData {
+    background-color: var(--container-color);
+    margin-top: 0px;
+    padding: 20px 30px;
+    border-radius: 10%;
+  }
+
+  .homeTitle {
+    padding-left: 0px;
+    display: block;
+  }
+
+  .homeTitle::before {
+    content: none;
+  }
+
+  .colorBlock {
+    top: -90%;
+    left: -10%;
+    transform: rotate(80deg);
+    z-index: -1;
+  }
 }
