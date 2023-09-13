@@ -33,3 +33,22 @@
   justify-items: center;
   row-gap: 48px;
 }
+
+/* Media Queries  */
+
+@media only screen and (max-width: 765px) {
+  .aboutContainer,
+  .infoList,
+  .stats,
+  .resumeContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutContainer {
+    place-items: center;
+  }
+
+  .aboutInfo {
+    margin-bottom: 10px;
+  }
+}
