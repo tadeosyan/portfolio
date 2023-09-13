@@ -44,6 +44,10 @@
     grid-template-columns: 1fr;
   }
 
+  .skillsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .aboutContainer {
     place-items: center;
   }

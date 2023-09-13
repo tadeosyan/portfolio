@@ -1,8 +1,7 @@
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-
-import styled from './Skills.module.css';
 import { skills } from 'data/data';
+import styled from './Skills.module.css';
 
 export const Skills = () => {
   return (
