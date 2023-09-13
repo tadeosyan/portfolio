@@ -13,3 +13,15 @@
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+/* Media Queries  */
+
+@media only screen and (max-width: 765px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .contactData {
+    padding: 0px 15px;
+  }
+}

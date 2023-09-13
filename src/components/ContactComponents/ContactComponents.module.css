@@ -126,3 +126,15 @@
   font-size: var(--small-font-size);
   font-weight: var(--weight-500);
 }
+
+/* Media Queries  */
+
+@media only screen and (max-width: 765px) {
+  .formInputGroup {
+    grid-template-columns: 1fr;
+  }
+  .contactForm {
+    padding: 15px 10px;
+    align-items: center;
+  }
+}
