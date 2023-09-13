@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { PortfolioItemTypes } from 'data';
 import { PortfolioModal } from './PortfolioModal';
-
+import { useScrollLock } from 'hooks';
 import styled from './PortfolioItem.module.css';
 
 export const PortfolioItem = ({
@@ -10,9 +10,12 @@ export const PortfolioItem = ({
   details,
 }: PortfolioItemTypes) => {
   const [modal, setModal] = useState(false);
+  const { lockScroll, unlockScroll } = useScrollLock();
 
   const toggleModal = () => {
     setModal(!modal);
+    !modal && lockScroll();
+    modal && unlockScroll();
   };
 
   return (
