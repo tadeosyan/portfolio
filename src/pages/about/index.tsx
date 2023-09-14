@@ -1,7 +1,7 @@
 import { Info, Skills, Stats, ResumeList } from 'components';
 import { FaDownload } from 'react-icons/fa';
 import styled from './About.module.css';
-import CV from 'assets/Razmik Tadevosyan(CV).pdf';
+import CV from 'assets/Razmik_Tadevosyan_(Cv).pdf';
 
 const About = () => {
   return (

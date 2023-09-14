@@ -5,11 +5,15 @@ import { FaCog } from 'react-icons/fa';
 import { ThemeItem } from './ThemeItem';
 import styles from './Themes.module.css';
 import { getStorageColor, getStorageTheme } from './utils';
+import { useOutsideClick } from 'hooks';
 
 export const Themes = () => {
   const [showSwitcher, setShowSwitcher] = useState(false);
   const [color, setColor] = useState(getStorageColor());
   const [theme, setTheme] = useState(getStorageTheme());
+  const themeRef = useOutsideClick(() => {
+    setShowSwitcher(false);
+  });
 
   const changeColor = (color: string) => {
     setColor(color);
@@ -37,7 +41,7 @@ export const Themes = () => {
   }, [theme]);
 
   return (
-    <div>
+    <div ref={themeRef}>
       <div
         className={`${showSwitcher ? styles.showSwitcher : ''}  ${
           styles.styleSwitcher
