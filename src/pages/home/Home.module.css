@@ -94,3 +94,24 @@
     z-index: -1;
   }
 }
+
+@media only screen and (min-width: 765px) {
+  .home {
+    grid-template-columns: 1.65fr 1.95fr;
+  }
+  .homeImg {
+    height: 50%;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1265px) {
+  .home {
+    grid-template-columns: 3fr 8.32fr;
+  }
+
+  .homeImg {
+    height: 60%;
+    margin-left: 120px;
+  }
+}
