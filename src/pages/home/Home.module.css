@@ -97,7 +97,7 @@
 
 @media only screen and (min-width: 765px) {
   .home {
-    grid-template-columns: 1.65fr 1.95fr;
+    grid-template-columns: 1.65fr 3.95fr;
   }
   .homeImg {
     height: 50%;
